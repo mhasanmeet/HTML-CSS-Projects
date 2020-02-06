@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/*---------- header section ------------*/
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #13424c;
+    z-index: 1000;
+    /* filter: opacity(0.8); */
+}
+
+header .logo{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header li{
+    position: relative;
+    list-style: none;   
+}
+
+header ul li a{
+    position: relative;
+    padding: 5px 10px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header ul li a.active,
+header ul li a:hover{
+    background: #eb9762;
+}
+
+.toggle{
+    display: none;
+}
+
+/*---------- Body section ------------*/
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+}
+
+section:nth-child(odd){
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    color: #fff;
+}
+
+section img{
+    max-width: 350px;
+    margin-left: 30px;
+}
+
+section h2{
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 18px;
+}
+
+section a{
+    display: inline-block;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    background: #111;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* section a:nth-child(odd){
+    display: inline-block;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    background: #111;
+    color: #fff;
+}
+
+section a:nth-child(even){
+    display: inline-block;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    background: #fff;
+    color: #111;
+} */
+
+
+/*--------- Media Query --------------*/
+
+@Media (max-width: 992px){
+
+    header ul{
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 50px 100px;
+        text-align: center;
+        overflow: auto;
+        transition: 0.5s;
+        background: #13424c;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    header.active ul{
+        opacity: 1;
+        top: 80px;
+        transform: translateY(0);
+    }
+
+    header ul li a{
+        margin: 5px 0;
+        font-size: 24px;
+    }
+
+    /* header .logo{
+        width: 100%;
+        text-align: center;
+    } */
+
+    header.active .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    header .toggle{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    header .toggle::before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s;
+    }
+
+    header .toggle::after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    header.active .toggle::before{
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+
+    header.active .toggle::after{
+        bottom: 14px;
+        transform: rotate(-45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+
+    section{
+        padding: 100px 50px 50px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        text-align: center;
+    }
+
+    section img{
+        margin: 50px 0 0;
+        max-width: 100%;
+    }
+
+    /* section h2{
+        
+    }
+
+    section p{
+
+    }
+    
+    section a{
+
+    } */
+
+    
+
+
+}
+
+
