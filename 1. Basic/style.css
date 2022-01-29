@@ -1,0 +1,211 @@
+
+body{ 
+    margin: 40px auto;
+    padding: 20px 40px;
+    width: 70%;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgb(241, 211, 168);
+    box-shadow: 0 0 20px #999;
+    border-radius: 20px;
+
+    /*--------------Animation------------------*/
+
+    animation: blink 20s linear infinite;
+    -webkit-animation: blink 20s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+      background: violet;
+    }
+    14.3% {
+      background: indigo;
+    }
+    28.6% {
+      background: blue;
+    }
+    42.9% {
+      background: green;
+    }
+    57.2% {
+      background: yellow;
+    }
+    71.5% {
+      background: orange;
+    }
+    85.8% {
+      background: red;
+    }
+    100% {
+      background: violet;
+    }
+}
+  
+  @-webkit-keyframes blink {
+    0% {
+      background: violet;
+    }
+    14.3% {
+      background: indigo;
+    }
+    28.6% {
+      background: blue;
+    }
+    42.9% {
+      background: green;
+    }
+    57.2% {
+      background: yellow;
+    }
+    71.5% {
+      background: orange;
+    }
+    85.8% {
+      background: red;
+    }
+    100% {
+      background: violet;
+    }
+}
+
+html{ background-color: antiquewhite;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+/*---------------------------Text Decoration Section---------------------------*/
+.style1{
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: red;
+    color: rgb(99, 141, 58);
+    word-spacing: 2px;
+}
+
+.style2{
+    text-decoration: underline overline dotted red;
+    letter-spacing: 1.5px;
+    color: blueviolet;
+}
+
+.style3{
+    text-decoration: line-through red;
+    color: navy;
+}
+
+.style4{
+    text-decoration: underline wavy purple;
+    color: darkslategray;
+}
+
+
+/*----------------------------------Sticky Section-------------------------------------*/
+
+.scroll{
+    text-align: center;
+}
+
+#wrapper {
+    width: 75%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(95, 86, 86);
+    height: 800px;
+    
+}
+
+#sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    background: #5d1b12;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgb(60, 194, 42);
+    color: rgb(60, 194, 42);
+    font-family: sans-serif;
+  }
+
+em{
+    color: red;
+    text-decoration: underline wavy rgb(9, 165, 9);
+}
+
+@media (min-height: 768px) {
+    #wrapper{
+      height: 2000px;
+ }
+}
+
+/*---------------------------------Text In Shape------------------------------------------*/
+
+img {
+    width: 300px;
+    height: 300px;
+    float: left;
+    shape-outside: circle(50%);
+    margin-right: 10px;
+  }
+ 
+.alice{
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #473c1f;
+}
+
+.hatter{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 14px;
+    color: chocolate;
+    text-transform: capitalize; 
+}
+
+.hatter::selection {
+    background: #24b383;
+    color: rgb(157, 12, 241); 
+}
+
+
+[href$=".pdf"]::after{
+    content: "" url("https://cdn3.iconfinder.com/data/icons/document-icons-2/30/647716-pdf-24.png");
+    padding: 5px;
+}
+
+.pdf{
+    color: #fb003f;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+    
+/*---------------------------------Log In Fields------------------------------------------*/
+
+.logIn{
+    color: #473c1f;
+    font-family: sans-serif;
+}
+
+:required {
+    border: 1px solid rgb(219, 70, 95);
+}
+  
+  :optional {
+    border: 1px solid rgb(32, 144, 189);
+}
+
+/*---------------------------------CheckBox Fields------------------------------------------*/
+
+input:checked + label{
+    background: rgb(87, 28, 1);
+    color: aliceblue;
+    font-family: sans-serif;
+}
