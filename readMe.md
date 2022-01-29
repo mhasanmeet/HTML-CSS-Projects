@@ -1,1 +1,0 @@
-## A Simple landing page for beginner
