@@ -1,3 +1,3 @@
-cloning this website 
+I Just clone DevTee website with HTML & CSS
 
-http://devtees.com/
+Link: http://devtees.com/
