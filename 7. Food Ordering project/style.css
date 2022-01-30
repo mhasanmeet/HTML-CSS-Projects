@@ -1,0 +1,267 @@
+/*
+Author: Mahmudul Hasan
+Name: Vijay Thapa
+version: 1.0
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat';
+    box-sizing: border-box;
+  }
+  
+  .container{
+    width: 80%;
+    border: 1px dotted red;
+    margin: 0 auto;
+    padding: 1%;
+    /* display: flex;
+    justify-content: center;
+    float: left;
+    align-items: center; */
+  }
+  
+  section{
+    border: 1px dotted red;
+  }
+  
+  .radious{
+    border-radius: 10px;
+  }
+  
+  /*Navbar Section*/
+  
+  /* nav{
+    display: flex;
+    justify-content: space-between;
+  } */
+  
+  .navbar{
+    width: 100%;
+    /* float: left; */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar .logo img{
+    width: 150px;
+  }
+  
+  .navbar .menu{
+    /* text-align: right; */
+    line-height: 80px;
+    display: inherit;
+    padding: 0 20px;
+  }
+  
+  .navbar .menu ul{
+    list-style: none;
+  }
+  
+  .navbar .menu ul li{
+    display: inline;
+    padding-left: 50px;
+  }
+  
+  .navbar .menu ul li a{
+    color: rgb(165, 19, 19);
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-size: 18px;
+  }
+  
+  .navbar .menu ul li a:hover{
+    color: rgb(19, 165, 51);
+    transition: all 0.5s ease;
+  }
+  
+  /*Food Search seaction*/
+  .food-search{
+    background: url(Assets/cover.jpg) no-repeat center center;
+    background-position: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 18px;
+    border: none;
+    /* border-radius: 20px; */
+    overflow: hidden;
+  }
+  
+  .food-search input[type="search"]:focus{
+    outline: none;
+  }
+  
+  .food-search input[type="submit"]{
+    padding: 15px 20px;
+    /* border-radius: 20px; */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+  }
+  
+  .food-search input[type="submit"]:hover{
+    color: rgb(255, 255, 255);
+    background-color: green;
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+  }
+  
+  .food-search input[type="submit"]:focus{
+    outline: none;
+    transition: all 0.5s ease;
+  }
+  
+  /*Food Categories seaction*/
+  .food-category{
+    padding: 20px 0;
+    margin: 20px 0;
+    overflow: hidden;
+  }
+  
+  .food-category h2{
+    text-align: center;
+    color: black;
+    padding: 20px 0;
+  }
+  
+  .food-category .category-boxes{
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding: 20px 0;
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+  }
+  
+  .food-category .category-boxes img{
+    width: 300px;
+    height: 400px;
+    filter: blur(1px);
+    /* position: absolute; */
+  }
+  
+  .food-category .category-boxes p{
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 8px 30px;
+    width: 30%;
+    /* align-items: center;
+    justify-content: center; */
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .food-category .category-boxes p:hover{
+    background-color: aqua;
+    transition: all 0.3s ease;
+  }
+  
+  /*Food Menu seaction*/
+  .explore{
+    overflow: hidden;
+    padding: 30px 0;
+    background-color: rgb(241, 235, 235);
+  }
+  
+  .explore h2{
+   text-align: center;
+   padding: 0 0 30px 0;
+  }
+  
+  .explore .food-menu{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+  }
+  
+  .explore .food-menu .menus{
+    border: 3px solid rgb(129, 123, 123);
+    border-radius: 10px;
+    width: 45%;
+    padding: 20px 0;
+    margin: 10px 10px;
+    background-color: #fff;
+  }
+  
+  .explore .food-menu .menus .content{
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+  
+  .explore .food-menu .food-menu-img{
+    width: 30%;
+    justify-content: center;
+    display: flex;
+    padding-left: 40px;
+  }
+  
+  .explore .food-menu .food-menu-img img{
+    height: 200px;
+    border-radius: 20px;
+    float: left;
+  }
+  
+  .explore .food-menu .food-menu-desc{
+    padding: 20px 0 0 30px;
+  }
+  
+  .explore .food-menu .food-menu-desc h4{
+    padding: 0 0 8px 0;
+  }
+  
+  .explore .food-menu .food-menu-desc p{
+    padding: 0 0 8px 0;
+  }
+  
+  .explore .food-menu .food-menu-desc button{
+    padding: 8px 10px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(187, 133, 133);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .explore .food-menu .food-menu-desc button:hover{
+    padding: 10px 18px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(199, 125, 125);
+    transition: all 0.5s ease;
+    color: aqua;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .container{
+    padding-bottom: 500px;
+  }
