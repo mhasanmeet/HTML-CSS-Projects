@@ -1,0 +1,39 @@
+@import url("https://use.typekit.net/bbx0ebd.css");
+
+header{
+  background-color: #CCCCCC;
+}
+
+body{
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-livechat{
+  color: #fff;
+  background-color: #FF6940;
+}
+
+.btn-livechat:hover{
+  border: #FF6940 solid 1px;
+  background-color: #fff;
+  color: #FF6940;
+  border-radius: 5px;
+}
+
+hr{
+  width: 100%;
+}
+
+.hero-image img{
+  width: 500px;
+}
+
+.Symptoms-card img{
+  width: 200px;
+}
+
+.symptoms__right{
+  width: 100%;
+}
