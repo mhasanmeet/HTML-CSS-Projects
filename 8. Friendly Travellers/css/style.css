@@ -1,0 +1,68 @@
+/* Extra Samll (xs) devices (Portrait phones, less than 576px)
+Need no media query since this is the default in Bootstarp 
+
+Small (sm) devices (landscape Phones, 576px and up)
+@media (min-width: 576px) {...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {...}
+
+Large (lg) devices (desktop, laptops, 992px and up)
+@media (min-width: 992px) {...}
+
+Extra large (xl) devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {...}
+*/
+
+@media (min-width: 1200px){
+  .slider .slides img{
+    /* object-fit: cover !important; */
+    background-position: center center !important;
+    /* background-repeat: no-repeat !important; 
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !; */
+  }
+}
+
+.slider .slide-items img {
+  opacity: 0.8 !important;
+}
+
+section#search{
+  /* width: 90% !important; */
+  margin: auto !important;
+  border-radius: 2px !important;
+}
+
+section#search .input-field input{
+  padding: 5px !important;
+  font-size: 28px !important;
+  width: 90% !important;
+  border-radius: 10px !important;
+  border: #c381f0 3px solid !important;
+}
+
+.social-media .fa-4x{
+  margin: 10px 20px;
+}
+
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #6a1b9a !important;
+  box-shadow: 0 1px 0 0 #6a1b9a !important;
+}
+
+/* label underline focus color */
+.input-field textarea:focus {
+  border-bottom: 1px solid #6a1b9a !important;
+  box-shadow: 0 1px 0 0 #6a1b9a !important;
+}
+
+/* Button Background Color*/
+.btn {
+  background-color: #6a1b9a !important;
+}
+
