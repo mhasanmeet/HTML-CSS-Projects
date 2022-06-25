@@ -1,3 +1,6 @@
-I Just clone DevTee website with HTML & CSS
+## A developer t-shirt Website with HTML &
 
-Link: http://devtees.com/
+Inspired from [DevTees](http://devtees.com/)
+
+### Image
+![Image](devtee.png)
