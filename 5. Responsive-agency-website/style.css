@@ -13,6 +13,8 @@ body{
     width: 80%;
     margin: auto;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul{
@@ -63,16 +65,19 @@ header li{
 }
 
 header #branding{
-    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header #branding h1{
-    margin: 0; 
+header #branding a{
+    font-size: 25px;
 }
 
 header nav{
-    float: right; 
-    margin-top: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .highlight, header .current a{
@@ -86,9 +91,11 @@ header a:hover{
 }
 
 /* Showcase */ 
+#showcase .container{
+    display: block;
+}
 #showcase{
-    min-height: 400px;
-    background: url('../Images/showcase.jpg') no-repeat 0 -400px;
+    background: url('./images/showcase.jpg') no-repeat 0 -400px;
     text-align: center; 
     color: #C0EB6A; 
 }
@@ -101,6 +108,7 @@ header a:hover{
 
 #showcase p{
     font-size: 20px; 
+    padding-bottom: 100px;
 }
 
 /* Newslater */ 
@@ -180,8 +188,11 @@ ul#services li{
 /* footer */
 
 footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     padding: 20px;
-    margin-top: 20px;
     color: #C0EB6A;
     background-color: #485550;
     text-align: center;
@@ -196,34 +207,71 @@ footer .highlight2{
 
 /* Media Queries */ 
 @media(max-width: 768px){
-    header #branding,
-    header nav,
-    header nav li,
-    #newslater h1,
-    #newslater form,
-    #boxes .box,
-    article#main-col,
-    aside#sidebar{
-
-        float: none;
-        text-align: center;
-        width: 100%;
+    .container{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
     }
 
-    header{
+    #branding{
+        width: 100%;
+        text-align: center;
+    }
+
+    #branding a{
+        font-size: 20px;
+    }
+
+    nav{
+        width: 100%;
         padding-bottom: 20px;
     }
 
     #showcase h1{
-        margin-top: 40px;
-    }
-    #newslater button, .quote button{
-        display:block;
-        width: 100%;
-    }
-    #newslater form input[type="email"], .quote input, .quote textarea{
-        width: 100%;
-        margin-bottom: 5px;
+        font-size: 40px;
+        max-width: 80%;
+        margin: auto;
+        margin-top: 50px;
     }
 
+    #showcase p{
+        font-size: 20px;
+        max-width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #newslater h1{
+        margin: auto;
+    }
+
+    #newslater form{
+        margin: auto;
+        text-align: center;
+    }
+
+    .button_1{
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    #boxes .container{
+        width: 90%;
+    }
+
+    #boxes .container .box{
+        width: 100%;
+    }
+
+    #main.container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #main-col{
+        margin-bottom: 100px;
+    }
 }
